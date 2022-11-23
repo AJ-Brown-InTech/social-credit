@@ -33,7 +33,7 @@ export default class RegisterTwo extends Component {
 
 
      <TouchableOpacity style={{padding: 12, backgroundColor: third, alignItems:'center',
-      justifyContent:'center', width: (deviceWidth/2), marginTop:12, marginBottom: 12}}>
+      justifyContent:'center', width: (deviceWidth/2), marginTop:12, marginBottom: 12}} onPress={()=>this.props.navigation.navigate('RegisterThree')}>
             <Text style={{color: secondary, fontSize: ((deviceHeight/deviceWidth) *8), fontWeight:'600', letterSpacing:1, textTransform: 'uppercase'}}>Continue</Text>
           </TouchableOpacity>
 </View>

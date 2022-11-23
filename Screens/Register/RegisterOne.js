@@ -34,10 +34,9 @@ export default class RegisterOne extends Component {
        <TextInput placeholder='Password'style={{borderBottomWidth : 1.0,  width: (deviceWidth/1.7), marginTop:40,marginBottom:40, borderColor: '#C4C5C8', fontSize: ((deviceHeight/deviceWidth) *9)}}></TextInput>
        
      <TouchableOpacity style={{paddingBottom: 12, paddingTop: 12, backgroundColor: third, alignItems:'center',
-      justifyContent:'center', width: (deviceWidth/2)}}>
+      justifyContent:'center', width: (deviceWidth/2)}} onPress={()=>this.props.navigation.navigate('RegisterTwo')}>
             <Text style={{color: secondary, fontSize: ((deviceHeight/deviceWidth) *8), fontWeight:'600', letterSpacing:1, textTransform: 'uppercase'}}>Continue</Text>
           </TouchableOpacity>
-
        <View style={{top:  deviceHeight/5}}><Text>Already have an account? <Text style={{fontWeight: '700'}} onPress={()=>this.props.navigation.navigate('Login')}>Log In</Text></Text></View>
         </View>
     

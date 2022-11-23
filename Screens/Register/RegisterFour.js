@@ -46,11 +46,11 @@ setDate(newDate) {
                 <Picker.Item label='Personal' value='3'></Picker.Item>
               </Picker>
             <TouchableOpacity style={{ backgroundColor: third, alignItems:'center', top: deviceHeight/3.5, paddingTop: 10, paddingBottom: 10,
-            justifyContent:'center', width: (deviceWidth/2)}}>
+            justifyContent:'center', width: (deviceWidth/2)}} onPress={()=>this.props.navigation.navigate('Home')}>
               <Text style={{color: secondary, fontSize: ((deviceHeight/deviceWidth) *7.5), fontWeight:'700', letterSpacing:1, textTransform: 'uppercase'}}>Next</Text>
             </TouchableOpacity> 
           </View>
-          <View style={{flex:3}}></View>
+          
       </>
     
     )

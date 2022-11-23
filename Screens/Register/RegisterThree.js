@@ -35,8 +35,8 @@ setDate(newDate) {
     return (
       
     <>
-        <View style={{flex:2}}></View>
-          <View style={{flex:2, alignItems: 'center'}}>
+        <View style={{flex:1}}></View>
+          <View style={{flex:1, alignItems: 'center'}}>
             <Text style={{fontSize: ((deviceHeight/deviceWidth) *10)}}>Select your birthday.</Text>
             <DatePicker 
               style={{width: deviceWidth, height: deviceHeight/4,}}
@@ -45,13 +45,13 @@ setDate(newDate) {
               onDateChange={(date)=> this.setDate(date)}
               maximumDate={new Date(Date.now())}
               />
-         
-            <TouchableOpacity style={{ backgroundColor: third, alignItems:'center', top: deviceHeight/10, paddingTop: 10, paddingBottom: 10,
-            justifyContent:'center', width: (deviceWidth/2)}}>
-              <Text style={{color: secondary, fontSize: ((deviceHeight/deviceWidth) *7.5), fontWeight:'700', letterSpacing:1, textTransform: 'uppercase'}}>Next</Text>
-            </TouchableOpacity> 
+         {console.log("pigs",this.props.navigation.navigate)}
+         <TouchableOpacity style={{padding: 12, backgroundColor: third, alignItems:'center',
+      justifyContent:'center', width: (deviceWidth/2), marginTop:12, marginBottom: 12}} onPress={()=>this.props.navigation.navigate('RegisterFour')}>
+            <Text style={{color: secondary, fontSize: ((deviceHeight/deviceWidth) *8), fontWeight:'600', letterSpacing:1, textTransform: 'uppercase'}}>Continue</Text>
+          </TouchableOpacity>
           </View>
-          <View style={{flex:3}}></View>
+          
       </>
     
     )
