@@ -1,8 +1,6 @@
 import {Component} from 'react'
-import {Text, View} from 'react-native'
-import { NavigationContainer, ScreenContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import { Button } from '@rneui/themed';
+import { View} from 'react-native'
+import { Button, Text } from '@rneui/themed';
 class Splash extends Component {
   render(){
 
@@ -17,8 +15,9 @@ class Splash extends Component {
       marginHorizontal: 50,
       marginVertical: 10,
     }
-    const nav = this.props.navigation
+ 
       return(
+       
          <View style={{
           flex: 1, 
           alignItems: 'center',
@@ -26,20 +25,21 @@ class Splash extends Component {
           backgroundColor: "#C9E3DC", 
           
           }}>
-            {console.log(this.props)}
-          <Text >RateUs</Text>
+            {console.log(this.props.navigation.push)}
+          <Text h4>Welcome to Rate Me</Text>
           <Button
               title="LOG IN"
               buttonStyle={button}
               containerStyle={buttonCtn}
               titleStyle={{ fontWeight: 'bold' }}
-              //onPress={()=> nav.push('Login')}
+              onPress={()=> this.props.navigation.navigate('Login')}
             />
            <Button
               title="REGISTER"
               buttonStyle={button}
               containerStyle={buttonCtn}
               titleStyle={{ fontWeight: 'bold' }}
+              onPress={()=> this.props.navigation.navigate('RegisterOne')}
             />
          </View>
       )

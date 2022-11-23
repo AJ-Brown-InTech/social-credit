@@ -1,7 +1,13 @@
 import * as React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Splash from './Screens/Splash'
+import Splash from './Screens/Splash/Splash'
+import Login from './Screens/Login/Login'
+import RegisterOne from './Screens/Register/RegisterOne'
+import RegisterTwo from './Screens/Register/RegisterTwo'
+import RegisterThree from './Screens/Register/RegisterThree'
+import RegisterFour from './Screens/Register/RegisterFour'
+
 const Stack = createNativeStackNavigator();
 
 class App extends React.Component {
@@ -9,9 +15,16 @@ class App extends React.Component {
  
   render (){
     return(
-    <NavigationContainer>
+    <NavigationContainer intialRouteName={Splash}>
+      {console.log(this)}
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Splash" component={Splash} />
+        <Stack.Screen name="Login" component={Login} />
+        <Stack.Screen name="RegisterOne" component={RegisterOne} />
+        <Stack.Screen name="RegisterTwo" component={RegisterTwo} />
+        <Stack.Screen name="RegisterThree" component={RegisterThree} />
+        <Stack.Screen name="RegisterFour" component={RegisterFour} />
+      
       </Stack.Navigator>
     </NavigationContainer>
     )
