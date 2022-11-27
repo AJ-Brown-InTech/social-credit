@@ -33,6 +33,7 @@ const styles =  StyleSheet.create({
             width: deviceWidth,
             height: deviceHeight,
             justifyContent: 'space-between'
+            
           }
 })      
 
