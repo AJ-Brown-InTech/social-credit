@@ -7,23 +7,22 @@ export default class Login extends Component {
   render() {
 
     return (
-      <ImageBackground source={LoginPicture}  style={styles.image}>
-          
-        <SafeAreaView style={styles.container}>
 
-          {/* <Text style={{fontSize: ((styles.height/styles.width) *15), fontWeight: '500', textShadowRadius:2  }}>Log in to Vive</Text>
-        <TextInput style={{borderBottomWidth : 1.0,  width: (deviceWidth/2), marginBottom: 15, marginTop: 30, borderColor: '#C4C5C8', fontSize: ((deviceHeight/deviceWidth) *9)}}></TextInput>
-        <TextInput placeholder='Password'style={{borderBottomWidth : 1.0,  width: (deviceWidth/2), marginBottom: 30, marginTop: 15,borderColor: '#CBCCD0', fontSize: ((deviceHeight/deviceWidth) *9)}}></TextInput>
-        <TouchableOpacity style={{paddingBottom: 12, paddingTop: 12, backgroundColor: third, alignItems:'center',
-      justifyContent:'center', width: (deviceWidth/2), marginTop: 14, marginBottom: 16}}>
-            <Text style={{ fontSize: ((deviceHeight/deviceWidth) *8), fontWeight:'600', letterSpacing:1, textTransform: 'uppercase'}} onPress={()=>this.props.navigation.navigate('Home')}>Log in</Text>
-          </TouchableOpacity>
-          <Text style={{fontSize: ((deviceHeight/deviceWidth) *6), paddingTop: 15}}>Forgot Password?</Text>
-       <View style={{top:  deviceHeight/4.5, fontSize: ((deviceHeight/deviceWidth) *6)}}><Text>Don't have an account? <Text style={{fontWeight: '700'}}  onPress={()=> this.props.navigation.navigate('RegisterOne')}>Sign Up</Text></Text></View> */} 
-       
+        <SafeAreaView style={styles.container}>
+          <Text style={styles.title}>Log in to Vive</Text>
+            <TextInput style={styles.textinput} placeholder='username / phone / email' placeholderTextColor='darkgrey'/> 
+            <TextInput style={styles.textinput} placeholder='password' placeholderTextColor='darkgrey'/>
+
+              <TouchableOpacity style={styles.loginbtn}onPress={()=>this.props.navigation.navigate('Home')} >
+                  <Text style={styles.loginbtntext} >Log in</Text>
+              </TouchableOpacity>
+              <Text style={styles.forgot}>Forgot Password?</Text>
+              <SafeAreaView style={styles.footer}>
+                <Text style={styles.footertxt}>Don't have an account? 
+                  <Text style={{fontWeight: '700'}}  onPress={()=> this.props.navigation.navigate('RegisterOne')}>Sign Up</Text>
+                </Text>
+              </SafeAreaView> 
         </SafeAreaView>
-        </ImageBackground>
-   
     )
   }
 }

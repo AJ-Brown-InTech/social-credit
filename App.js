@@ -19,7 +19,7 @@ class App extends React.Component {
 
     return(
  <SafeAreaProvider>
-    <NavigationContainer intialRouteName={Login}>
+    <NavigationContainer intialRouteName={RegisterOne}>
       <Stack.Navigator screenOptions={{headerShown: false}}>
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="RegisterOne" component={RegisterOne} />

@@ -6,7 +6,7 @@ const deviceWidth = Dimensions.get('window').width
 
 const styles =  StyleSheet.create({
     container: {
-    flex: 3,
+    flex: 1,
     flexDirection: 'column',
     alignItems:'center',
     justifyContent:'center',
@@ -20,21 +20,50 @@ const styles =  StyleSheet.create({
     height: deviceHeight,
     textinput: {
         borderBottomWidth: 1,
-        width: (deviceWidth / 2),
-        padding: 1,
-        fontSize: ((deviceHeight/deviceWidth) * 9),
-        marginTop: '15',
-        marginBottom: '15'
+        width: (deviceWidth/1.5),
+        padding: '2%',
+        fontSize: ((deviceHeight/deviceWidth) * 8.5),
+        marginTop: (15 * 2),
+        marginBottom: 15,
+        borderRadius: 20 ,
+        borderColor: 'black'
     },
     forgot:{
-        fontSize: ((deviceHeight/deviceWidth) * 7)
+        fontSize: ((deviceHeight/deviceWidth) * 8),
+        paddingTop: '2%'
     },
         image: {
             width: deviceWidth,
             height: deviceHeight,
-            justifyContent: 'space-between'
-            
-          }
+            justifyContent: 'space-between',
+          },
+          title:{
+            fontSize: ((deviceHeight/deviceWidth) *15), 
+            fontWeight: '400', 
+            textTransform: 'capitalize',
+          },
+          loginbtn:{
+            paddingBottom: '4%', 
+            paddingTop: '4%', 
+            backgroundColor: '#83cc9a', 
+            alignItems:'center',
+            justifyContent:'center', 
+            width: (deviceWidth/1.5), 
+            marginTop: '4%' ,
+            marginBottom: '4%'
+             },
+      loginbtntext:{
+        fontSize: ((deviceHeight/deviceWidth) *10),
+        fontWeight:'600',
+        letterSpacing:1,
+        textTransform: 'uppercase'
+      },
+      footer:{
+        top:  deviceHeight/5,
+      },
+      footertxt:{
+        fontSize: ((deviceHeight/deviceWidth) *8)
+      }
 })      
 
 export default styles
