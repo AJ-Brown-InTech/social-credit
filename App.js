@@ -1,7 +1,8 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import Splash from './Screens/Splash/Splash'
+import { NavigationContainer } from '@react-navigation/native'; //navigation router
+import { createNativeStackNavigator } from '@react-navigation/native-stack'; //navigation router
+import { SafeAreaProvider } from 'react-native-safe-area-context'; //screen handler for safeviewprovider
+
 import Login from './Screens/Login/Login'
 import RegisterOne from './Screens/Register/RegisterOne'
 import RegisterTwo from './Screens/Register/RegisterTwo'
@@ -15,20 +16,20 @@ class App extends React.Component {
  
  
   render (){
+
     return(
-    <NavigationContainer intialRouteName={Splash}>
-      {console.log(this)}
+ <SafeAreaProvider>
+    <NavigationContainer intialRouteName={Login}>
       <Stack.Navigator screenOptions={{headerShown: false}}>
-        <Stack.Screen name="Splash" component={Splash} />
         <Stack.Screen name="Login" component={Login} />
         <Stack.Screen name="RegisterOne" component={RegisterOne} />
         <Stack.Screen name="RegisterTwo" component={RegisterTwo} />
         <Stack.Screen name="RegisterThree" component={RegisterThree} />
         <Stack.Screen name="RegisterFour" component={RegisterFour} />
         <Stack.Screen name="Home" component={Home} />
-      
       </Stack.Navigator>
     </NavigationContainer>
+</SafeAreaProvider>
     )
     }
 };
