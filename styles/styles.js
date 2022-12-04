@@ -38,8 +38,8 @@ const styles =  StyleSheet.create({
             justifyContent: 'space-between',
           },
           title:{
-            fontSize: ((deviceHeight/deviceWidth) *15), 
-            fontWeight: '400', 
+            fontSize: ((deviceHeight/deviceWidth) *10), 
+            fontWeight: '500', 
             textTransform: 'capitalize',
           },
           loginbtn:{
