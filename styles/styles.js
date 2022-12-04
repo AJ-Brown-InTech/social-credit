@@ -12,6 +12,13 @@ const styles =  StyleSheet.create({
     justifyContent:'center',
     fontFamily: 'Helvetica Neue',
     },
+    containerthree: {
+      flex: 3,
+      flexDirection: 'column',
+      alignItems:'center',
+      justifyContent:'center',
+      fontFamily: 'Helvetica Neue',
+      },
     green: {
         color:'#99b9ad',
         textShadowColor: '#99b9ad'
@@ -28,6 +35,14 @@ const styles =  StyleSheet.create({
         borderRadius: 20 ,
         borderColor: 'black'
     },
+    input: {
+      borderBottomWidth: 1,
+      width: (deviceWidth/1.5),
+      padding: '2%',
+      fontSize: ((deviceHeight/deviceWidth) * 8.5),
+      marginTop: (15 * 2),
+      marginBottom: 15,
+  },
     forgot:{
         fontSize: ((deviceHeight/deviceWidth) * 8),
         paddingTop: '2%'

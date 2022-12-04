@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
-import { View, Text, Dimensions, StyleSheet, TouchableOpacity } from "react-native"
+import { View, Text, TouchableOpacity } from "react-native"
 import DatePicker from 'react-native-date-picker'
-import {Picker} from '@react-native-picker/picker'
-import '../../styles/styles'
 import styles from '../../styles/styles'
 export default class RegisterThree  extends Component {
   constructor(props){
