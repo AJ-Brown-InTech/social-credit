@@ -33,8 +33,8 @@ render(){
         // }}>
         //     <Text >Home Page</Text>
         //    </View>
-    <Tab.Navigator>
-      <Tab.Screen name="Activity" component={Activity} />
+    <Tab.Navigator initialRouteName="Feed">
+      <Tab.Screen name="Activity" component={Activity}  />
       <Tab.Screen name="Discover" component={Discover} />
       <Tab.Screen name="Feed" component={Feed} />
       <Tab.Screen name="Profile" component={Profile} />
