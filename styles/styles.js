@@ -85,7 +85,7 @@ const styles =  StyleSheet.create({
         alignItems:'center',
         borderColor: 'black',
         width: deviceWidth,
-        height: (deviceHeight * .425),
+        height: (deviceHeight * .475),
         
       },
       profile:{
@@ -100,19 +100,16 @@ const styles =  StyleSheet.create({
         fontSize: ((deviceHeight/deviceWidth) *12) ,
          fontWeight: '700',
          top: '12%',
-         color: '#414a4c'
+         color: '#343434'
          
       },
       profileusername:{
         fontSize: ((deviceHeight/deviceWidth) *7) ,
         fontWeight: '500',
         top: '12%',
-        color: '#414a4c'
+        color: '#414a4c',
+        margin: '1%'
       },
-      profilenum:{
-        color: '#343434', fonstsize: 16, fontWeight: '500'
-      },
-     
       profilecontainer: {
         flex: 2,
         alignItems:'center',
@@ -121,6 +118,45 @@ const styles =  StyleSheet.create({
         margin:0,
         padding: 0,
         },
+        stats:{
+          flexDirection: 'row',
+          top: '12%',
+        },
+        statctn:{
+          flexDirection: 'row',
+          alignItems: 'center',
+          color: '#414a4c',
+          margin: '2%',
+        },
+        profilenum:{
+          color: '#343434', fontSize: ((deviceHeight/deviceWidth) *7), fontWeight: '700'
+        },
+        profilebio:{
+          fontSize: ((deviceHeight/deviceWidth) *6.5) ,
+          top: '12%',
+          margin: '1.5%',
+          fontWeight: '400',
+          textAlign: 'center',
+          color: '#414a4c',
+        },
+        profileeditbtn:{
+          top: '12%',
+          color: '#414a4c',
+          backgroundColor: '#f4f0ec',
+          width: (deviceWidth* .75),
+          textAlign: 'center',
+          borderRadius: 5,
+          borderColor: 'black',
+          margin: '1%'
+        },
+        profileeditbtntext:{
+          fontSize: ((deviceHeight/deviceWidth) *6),
+          letterSpacing: 1,
+          textTransform: 'capitalize',
+          textAlign: 'center',
+          padding: '1.5%',
+          fontWeight: '500',
+        }
 
 })      
 
