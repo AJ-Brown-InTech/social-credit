@@ -21,8 +21,10 @@ let dummydata = {
     return(
              <View style={styles.profilecontainer}>
                 <View style={styles.profilectn}>
-                <Text style={styles.profilename}>{dummydata.title}</Text>
-                    <Image styles={styles.profile} source={{uri: "https://images.unsplash.com/photo-1634983707236-fb45a8ef1063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"}}/>
+                   
+                        <Text style={styles.profilename}>{dummydata.title}</Text>
+                        <Image style={styles.profile} source={{uri: "https://images.unsplash.com/photo-1634983707236-fb45a8ef1063?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80"}}/>
+                        <Text style={styles.profileusername}>{dummydata.username}</Text>
                 {/*    
             <Text styles={styles.profilename}>{dummydata.username}</Text>
             <Text>New York, USA</Text>

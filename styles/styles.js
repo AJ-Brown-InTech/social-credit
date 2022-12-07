@@ -85,23 +85,34 @@ const styles =  StyleSheet.create({
         alignItems:'center',
         borderColor: 'black',
         width: deviceWidth,
-        height: (deviceHeight * .4)
+        height: (deviceHeight * .425),
+        
       },
       profile:{
-        height: '20%',//(deviceHeight * 1.2),
-        width: '20%',//(deviceWidth * 1.2),
-        borderRadius: 25,
-        bottom:"10%"
+        height: (deviceHeight/8),
+        width: (deviceWidth/4),
+        borderRadius: 50,
+        margin: '1.5%',
+        top: '12%'
+       
       },
       profilename:{
-        fontSize: ((deviceHeight/deviceWidth) *12) , fontWeight: '700', top: "15%"
+        fontSize: ((deviceHeight/deviceWidth) *12) ,
+         fontWeight: '700',
+         top: '12%',
+         color: '#414a4c'
+         
+      },
+      profileusername:{
+        fontSize: ((deviceHeight/deviceWidth) *7) ,
+        fontWeight: '500',
+        top: '12%',
+        color: '#414a4c'
       },
       profilenum:{
-        color: 'red', fonstsize: 16, fontWeight: '500'
+        color: '#343434', fonstsize: 16, fontWeight: '500'
       },
-      profilenumtwo:{
-        color: 'red', fonstsize: 16, fontWeight: '500'
-      },
+     
       profilecontainer: {
         flex: 2,
         alignItems:'center',
