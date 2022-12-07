@@ -1,7 +1,7 @@
 import {Component} from 'react'
 import {Text, View} from 'react-native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import styles from '../../styles/styles'
+import styles from '../../../styles/styles'
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
@@ -15,7 +15,7 @@ function MyTabs() {
 
 
 
-class Discover extends Component {
+class Activity extends Component {
 render(){
     return(
         <View style={{
@@ -23,7 +23,7 @@ render(){
             alignItems: 'center',
             justifyContent: 'center', 
         }}>
-            <Text >Discover Page</Text>
+            <Text >Activity Page</Text>
   
            </View>
            
@@ -32,4 +32,4 @@ render(){
 
 }
 
-  export default Discover
+  export default Activity

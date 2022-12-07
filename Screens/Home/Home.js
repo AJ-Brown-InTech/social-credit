@@ -3,10 +3,10 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../../styles/styles'
 //Main User screens
-import Activity from './Activity'
-import Discover from './Discover'
-import Feed from './Feed'
-import Profile from './Profile'
+import Activity from './Activity/Activity'
+import Discover from './Discover/Discover'
+import Feed from './Feed/Feed'
+import Profile from './Profile/Profile'
 
 const Tab = createBottomTabNavigator();
 
@@ -19,7 +19,7 @@ render(){
     barStyle={{ backgroundColor: 'blue' }}
     initialRouteName="Feed"
     tabBarOptions={{
-      activeTintColor: '#99b9ad',
+      activeTintColor: '#83cc9a',
       tabBarPosition: 'bottom',
       swipeEnabled: true,
       lazy: false,

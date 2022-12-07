@@ -7,10 +7,11 @@ const deviceWidth = Dimensions.get('window').width
 const styles =  StyleSheet.create({
     container: {
     flex: 1,
-    flexDirection: 'column',
     alignItems:'center',
     justifyContent:'center',
     fontFamily: 'Helvetica Neue',
+    margin:0,
+    padding: 0,
     },
     containerthree: {
       flex: 3,
@@ -20,8 +21,8 @@ const styles =  StyleSheet.create({
       fontFamily: 'Helvetica Neue',
       },
     green: {
-        color:'#99b9ad',
-        textShadowColor: '#99b9ad'
+        color:'#83cc9a',
+        textShadowColor: '#83cc9a'
     },
     width: deviceWidth,
     height: deviceHeight,
@@ -78,7 +79,38 @@ const styles =  StyleSheet.create({
       },
       footertxt:{
         fontSize: ((deviceHeight/deviceWidth) *8)
-      }
+      },
+      profilectn:{
+        backgroundColor: '#83cc9a',
+        alignItems:'center',
+        borderColor: 'black',
+        width: deviceWidth,
+        height: (deviceHeight * .4)
+      },
+      profile:{
+        height: '20%',//(deviceHeight * 1.2),
+        width: '20%',//(deviceWidth * 1.2),
+        borderRadius: 25,
+        bottom:"10%"
+      },
+      profilename:{
+        fontSize: ((deviceHeight/deviceWidth) *12) , fontWeight: '700', top: "15%"
+      },
+      profilenum:{
+        color: 'red', fonstsize: 16, fontWeight: '500'
+      },
+      profilenumtwo:{
+        color: 'red', fonstsize: 16, fontWeight: '500'
+      },
+      profilecontainer: {
+        flex: 2,
+        alignItems:'center',
+        justifyContent:'center',
+        fontFamily: 'Helvetica Neue',
+        margin:0,
+        padding: 0,
+        },
+
 })      
 
 export default styles
